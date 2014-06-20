@@ -1,0 +1,20 @@
+{
+  "name": "Application",
+  "version": "0.1.0",
+  "authors": [
+    "Milos Mosovsky <milos.mosovsky@gmail.com>"
+  ],
+  "dependencies": {
+    "foundation": ">= 5.2.0",
+    "angular": "~1.2.18",
+    "requirejs": "~2.1.14"
+  },
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
