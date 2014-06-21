@@ -13,14 +13,14 @@ module.exports = function(grunt){
             server: {
                 options: {
                     livereload: false,
-                    base: './public',
+                    base: './',
                     port: 8000
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['public/**'],
+                files: ['core/**'],
                 tasks: ["sass"],
                 options: {
                     spawn: false,
@@ -35,7 +35,7 @@ module.exports = function(grunt){
                     style: 'expanded'
                 },
                 files: {                         // Dictionary of files
-                    'public/css/app.css': 'public/scss/app.scss'       // 'destination': 'source'
+                    'css/app.css': 'scss/app.scss'       // 'destination': 'source'
                 }
             }
         }
