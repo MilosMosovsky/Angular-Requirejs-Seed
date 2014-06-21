@@ -43,5 +43,13 @@ define(['../app'], function(app) {
                     }
                 }
             })
+            .state('parent.preview',{
+                url : "/preview",
+                views : {
+                    'content@parent' : {
+                        templateUrl : 'core/views/Preview.html'
+                    }
+                }
+            })
     }]);
 });
