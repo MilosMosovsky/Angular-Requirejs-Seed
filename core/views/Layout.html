@@ -1,13 +1,19 @@
 <!-- main layout file holding header , content , footer -->
+<div  class="off-canvas-wrap">
+    <div class="inner-wrap">
 
-<!-- content -->
-    <div ui-view="header"></div >
-<!-- end content -->
+        <!-- content -->
+        <div ui-view="header"></div >
+        <!-- end content -->
 
-<!-- content -->
-    <div ui-view="content"></div>
-<!-- end content -->
+        <!-- content -->
+        <div ui-view="content"></div>
+        <!-- end content -->
 
-<!-- content -->
-    <ui-view="footer"></ui-view>
-<!-- end content -->
+        <!-- content -->
+        <div ui-view="footer"></div>
+        <!-- end content -->
+
+        <a class="exit-off-canvas"></a>
+    </div>
+</div>
