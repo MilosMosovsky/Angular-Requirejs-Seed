@@ -17,10 +17,10 @@ define(['../app'], function(app) {
                 abstract : true,
                 views : {
                     '' : {
-                        templateUrl : '/core/view/global/Layout.html'
+                        templateUrl : 'core/view/global/Layout.html'
                     },
                     'header@parent' : {
-                        templateUrl : '/core/view/global/Header.html'
+                        templateUrl : 'core/view/global/Header.html'
                     }
 
                 }
@@ -29,7 +29,7 @@ define(['../app'], function(app) {
                 url : "/dashboard",
                 views : {
                     'content@parent' : {
-                        templateUrl : '/core/view/dashboard/Dashboard.html',
+                        templateUrl : 'core/view/dashboard/Dashboard.html',
                         controller : 'dashboard/main'
                     }
                 }
@@ -38,7 +38,7 @@ define(['../app'], function(app) {
                 url : "/user",
                 views : {
                     'content@parent' : {
-                        templateUrl : '/core/view/user/User.html',
+                        templateUrl : 'core/view/user/User.html',
                         controller : 'user/main'
                     }
                 }
