@@ -1,8 +1,7 @@
 define([
-    /** angular library **/
+/** angular library **/
     'angular',
-
-    /** main features **/
+/** main features **/
     'features/user/feature',
     'features/dashboard/feature'
 
@@ -13,9 +12,10 @@ define([
     var app = angular.module('ApplicationModule', [
         'ui.router',
 
-        /** features **/
+    /** features **/
         'user.feature',
-        'dashboard.feature'
+        'dashboard.feature',
+        'mm.foundation'
     ]);
 
     app.init = function () {

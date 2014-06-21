@@ -1,11 +1,21 @@
-<nav class="top-bar" data-topbar>
-    <ul class="title-area">
-        <li class="name">
-            <h1><a>AngularJS Seed application</a></h1>
-        </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+<nav class="tab-bar show-for-small-only" >
+    <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+    </section>
+
+    <section class="middle tab-bar-section">
+        <h1 class="title left">Mobile application</h1>
+    </section>
+
+</nav>
+<aside class="left-off-canvas-menu">
+    <ul class="off-canvas-list">
+        <li ng-class="{'active' : $state.includes('parent.dashboard.**')}"><a ui-sref="parent.dashboard" >Dashboard Feature</a></li>
+        <li ng-class="{'active' : $state.includes('parent.user.**')}"><a ui-sref="parent.user">Users Feature</a></li>
+        <li ng-class="{'active' : $state.includes('parent.preview.**')}"><a ui-sref="parent.preview">CSS Preview</a></li>
     </ul>
+</aside>
+<nav class="top-bar hide-for-small-only" data-topbar>
     <section class="top-bar-section">
         <!-- Left Nav Section -->
         <ul class="left">
