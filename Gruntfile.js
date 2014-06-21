@@ -19,16 +19,21 @@ module.exports = function(grunt){
             }
         },
         watch: {
-            scripts: {
+            reload: {
                 files: ['core/**'],
-                tasks: ["sass"],
                 options: {
                     spawn: false,
                     interrupt: true,
                     livereload : true
                 }
-            }
-        },
+            },
+            scss : {
+                files : ['scss/**'],
+                tasks : ['sass'],
+                options: {
+                    livereload : true
+                }
+            }        },
         sass: {                              // Task
             dist: {                            // Target
                 options: {                       // Target options
