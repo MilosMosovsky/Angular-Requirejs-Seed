@@ -1,13 +1,16 @@
 define([
     'angular',
-    './config/routes'
+    './config/routes',
+    './config/run'
 
 ], function (ng) {
     var app =  ng.module('Application', [
                     'ApplicationModule'
                 ]);
+
     app.init = function () {
-        angular.bootstrap(document, ['Application']);
+        console.info('Bootstrapping seed application ... ');
+        ng.bootstrap(document, ['Application']);
     };
 
     return app;

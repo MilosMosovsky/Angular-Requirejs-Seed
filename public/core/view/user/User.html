@@ -1,0 +1,15 @@
+    <div class="large-12 columns">
+        <!-- main content of user feature -->
+        <div class="large-12 columns">
+            <h1>User feature</h1>
+        </div>
+        <!-- end main content of user feature -->
+        <div class="large-2 columns">
+            <button class="button tiny success" ng-click="addNewUser()">Add new user</button>
+        </div>
+        <div class="large-10 columns">
+           <ul>
+               <li ng-repeat="user in users">User {{$index+1}} <a ng-click="removeUser(user)">Delete</a></li>
+           </ul>
+        </div>
+    </div>

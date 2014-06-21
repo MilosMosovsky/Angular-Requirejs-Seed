@@ -9,14 +9,39 @@ define(['../app'], function(app) {
 
     app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
 
-        $urlRouterProvider.otherwise("/home");
+        console.info('Initializing module states ... ');
+        $urlRouterProvider.otherwise("/dashboard");
 
         $stateProvider
             .state('parent',{
-            abstract : true
+                abstract : true,
+                views : {
+                    '' : {
+                        templateUrl : '/core/view/global/Layout.html'
+                    },
+                    'header@parent' : {
+                        templateUrl : '/core/view/global/Header.html'
+                    }
+
+                }
             })
-            .state('parent.home',{
-                url : "/home"
+            .state('parent.dashboard',{
+                url : "/dashboard",
+                views : {
+                    'content@parent' : {
+                        templateUrl : '/core/view/dashboard/Dashboard.html',
+                        controller : 'dashboard/main'
+                    }
+                }
+            })
+            .state('parent.user',{
+                url : "/user",
+                views : {
+                    'content@parent' : {
+                        templateUrl : '/core/view/user/User.html',
+                        controller : 'user/main'
+                    }
+                }
             })
     }]);
 });
