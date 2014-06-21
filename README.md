@@ -1,4 +1,19 @@
-Angular-Requirejs-Seed
+Angular-Requirejs-Seed v 0.0.1
 ======================
 
-Seed angular + requirejs + foundation + grunt + livereload + sass 
+Seed Angular application for large angularjs projects. Highly modular directory structure.
+Each application future is fully isolated inside own directory structure
+
+Live demo http://milosmosovsky.github.io/Angular-Requirejs-Seed/
+
+Components :
+
+- AngularJS
+- RequireJS
+- Bower
+- Grunt
+- UI Router
+- Zurb Foundation with sass support
+- Livereload
+
+
