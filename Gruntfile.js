@@ -35,7 +35,7 @@ module.exports = function(grunt){
                     style: 'expanded'
                 },
                 files: {                         // Dictionary of files
-                    'public/css/app.css': 'scss/app.scss'       // 'destination': 'source'
+                    'css/app.css': 'scss/app.scss'       // 'destination': 'source'
                 }
             }
         }
